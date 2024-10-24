@@ -1,0 +1,6 @@
+a = input()
+arr = a.split("-")
+b = int(arr[0])
+c = int(arr[1])
+d = int(arr[2])
+print(f"0{b}-{d}-{c}")
