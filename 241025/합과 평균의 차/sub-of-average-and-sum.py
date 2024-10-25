@@ -1,0 +1,8 @@
+a = input()
+arr = a.split()
+b = int(arr[0])
+c = int(arr[1])
+d = int(arr[2])
+print(b+c+d)
+print(int((b+c+d)/3))
+print(int(((b+c+d)-((b+c+d)/3))))
