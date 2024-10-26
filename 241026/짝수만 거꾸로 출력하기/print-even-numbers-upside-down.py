@@ -4,7 +4,7 @@ arr = []
 for i in range(a) :
     b = int(input())
     if b % 2 == 0 and b != 0:
-        arr.append(a)
+        arr.append(b)
 
 if len(arr) == 0 :
     print(0)
