@@ -1,13 +1,16 @@
 a = int(input())
-arr = []
+reverse_arr = []
+cnt = 0
 
-for i in range(a):
-    b = int(input())
-    if b % 2 == 0 and b != 0:
-        arr.append(b)  # b를 추가
+arr = list(map(int , input().split()))
 
-if len(arr) == 0:
+for i in range (len(arr)-1 , -1, -1 ) :
+    if arr[i] % 2 == 0 and arr[i] != 0 :
+        reverse_arr.append(arr[i])
+
+
+if len(reverse_arr) == 0 :
     print(0)
-else:
-    for elm in arr:
-        print(elm, end=" ")
+else :
+    for elm in reverse_arr :
+        print(elm,end = " ")
