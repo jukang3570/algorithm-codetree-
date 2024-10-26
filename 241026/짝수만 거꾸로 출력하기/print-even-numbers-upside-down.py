@@ -12,5 +12,4 @@ for i in range (a-1 , -1, -1 ) :
 if len(reverse_arr) == 0 :
     print(0)
 else :
-    for elm in reverse_arr :
-        print(elm,end = " ")
+    print(" ".join(map(str, reverse_arr)))
