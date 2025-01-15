@@ -1,4 +1,4 @@
-def ans (a,b,s) :
+def ans (a,b,c) :
     min_ans = 0
     if a < b and a < c :
         min_ans = a
