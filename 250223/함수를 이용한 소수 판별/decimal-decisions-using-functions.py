@@ -2,7 +2,7 @@
 a,b = map(int,input().split())
 cnt = 0
 def check(j) :
-    if j %2 != 0 and j%3 != 0 :
+    if j %2 != 0 and j%3 != 0 and j != 1:
         return j
     else :
         return 0
