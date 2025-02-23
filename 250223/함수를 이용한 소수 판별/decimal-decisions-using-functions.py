@@ -1,11 +1,14 @@
-
 a,b = map(int,input().split())
 cnt = 0
-def check(j) :
-    if j %2 != 0 and j%3 != 0 and j != 1:
-        return j
-    else :
+def check(number) :
+    if number == 1:
         return 0
+    for i in range(2, number+1) :
+        if i != number :
+            if number % i == 0 :
+                return 0
+        else :
+            return number
 
 
 for i in range(a,b+1) :
