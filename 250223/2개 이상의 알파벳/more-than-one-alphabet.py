@@ -6,7 +6,7 @@ def check_str(arr) :
         for j in range(len(arr)) :
             if i != j and arr[i] != arr[j] :
                 cnt += 1
-        if cnt <2 :
+        if cnt <1 :
             return False
     return True
 check = check_str(arr)
