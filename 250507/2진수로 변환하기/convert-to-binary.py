@@ -1,6 +1,6 @@
 n = int(input())
 arr = []
-while n > 1 :
+while n > 2 :
     arr.append(n%2)
     n //= 2
 arr.append(1)
