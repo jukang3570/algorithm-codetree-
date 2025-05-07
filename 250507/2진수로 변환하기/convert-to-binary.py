@@ -1,9 +1,12 @@
 n = int(input())
 arr = []
-while n > 2 :
-    arr.append(n%2)
-    n //= 2
-arr.append(1)
+
+if n == 0:
+    arr.append(0)
+else:
+    while n > 0:
+        arr.append(n % 2)
+        n //= 2
+
 arr.reverse()
-for num in arr :
-    print(num,end = '')
+print(''.join(map(str, arr)))
