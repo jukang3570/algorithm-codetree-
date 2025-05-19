@@ -13,7 +13,7 @@ grid = [ ['0' for _ in range(300)] for _ in range(300)]
 for i in range(2) :
     for j in range(x1[i],x2[i]) :
         for k in range(y1[i],y2[i]) :
-            grid[j][k] = '1'
+            grid[j+100][k+100] = '1'
 
 # 마지막에
 ans = sum(row.count('1') for row in grid)
