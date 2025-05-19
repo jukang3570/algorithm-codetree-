@@ -5,9 +5,9 @@ dir = []
 for num, direction in commands:
     x.append(int(num))
     dir.append(direction)
-state = [ '0' for _ in range(101)]
+state = [ '0' for _ in range(10001)]
 # Please write your code here.
-pos = 0
+pos = 5000
 for i in range(n) :
     d = dir[i]
     y = x[i]
