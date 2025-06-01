@@ -21,9 +21,12 @@ for _ in range(m) :
 
 for i in range(1,len(a)) :
     if ans < 0 :
-        if a[i] > b[i] : first = a
-        elif b[i] > a[i] : first = b
-        ans += 1
+        if a[i] > b[i] : 
+            first = a
+            ans += 1
+        elif b[i] > a[i] : 
+            first = b
+            ans += 1
     if first == a :
         if b[i] > a[i] : 
             ans += 1
